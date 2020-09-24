@@ -6,7 +6,19 @@ package com.moqi
 class A03ExecuteProcess {
 
     static void main(String[] args) {
-        println "svn help".execute().text
+        println "git help".execute().text
+        println()
+
+        // java.lang.ProcessImpl
+        println "git help".execute().getClass().name
+        println()
+
+        // Groovy Version: 3.0.5 JVM: 1.8.0_242 Vendor: AdoptOpenJDK OS: Mac OS X
+        println "groovy -v".execute().text
+        println()
+
+        // It work on Unix like System.
+        println "ls -l /Users".execute().text
     }
 
 }
