@@ -3,14 +3,14 @@ package com.moqi
 /**
  * @author moqi* On 9/24/20 21:40
  */
-public class Greetings {
+class Greetings {
 
-    public static void main(String[] args) {
-        for (int i = 0; i < 3; i++) {
-            System.out.print("ho ")
+    static void main(String[] args) {
+        for (i in 0..2) {
+            print 'ho '
         }
 
-        System.out.println("Merry Groovy!")
+        println 'Merry Groovy!'
     }
 
 }
