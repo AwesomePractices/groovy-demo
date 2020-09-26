@@ -11,8 +11,8 @@ if (str) {
 }
 
 lst0 = null
-print lst0 ? 'lst0 true' : 'lst0 false'
+println lst0 ? 'lst0 true' : 'lst0 false'
 lst1 = [1, 2, 3]
-print lst1 ? 'lst1 true' : 'lst1 false'
+println lst1 ? 'lst1 true' : 'lst1 false'
 lst2 = []
-print lst2 ? 'lst2 true' : 'lst2 false'
+println lst2 ? 'lst2 true' : 'lst2 false'
