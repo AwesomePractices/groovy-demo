@@ -2,7 +2,7 @@ package com.moqi
 
 /**
  * 对 Java 5 的支持
- * 自动装箱、for-each、enum、变长参数、注解、静态导入、范型
+ * 自动装箱、for-each、enum
  *
  * @author moqi* On 9/26/20 21:30
  */
@@ -16,7 +16,9 @@ for (greet in greetings) {
 }
 println()
 
-enum CoffeeSize {SHORT, SMALL, MEDIUM, LARGE, MUG}
+enum CoffeeSize {
+    SHORT, SMALL, MEDIUM, LARGE, MUG
+}
 
 def orderCoffee(size) {
     print "Coffee order received for size $size. "
@@ -49,7 +51,8 @@ enum Methodologies {
     Scrum(30);
 
     final int daysInIteration
-    Methodologies(days) {daysInIteration = days}
+
+    Methodologies(days) { daysInIteration = days }
 
     def iterationDetails() {
         println "${this} recommends $daysInIteration days for iteration"
