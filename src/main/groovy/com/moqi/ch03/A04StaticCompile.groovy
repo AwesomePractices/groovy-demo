@@ -16,3 +16,6 @@ def shout1Static(String str) {
     println(str.toUpperCase())
 }
 
+str = 'Hello'
+shout1(str)
+shout1Static(str)
