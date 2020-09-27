@@ -4,6 +4,8 @@ import groovy.transform.TypeChecked
 import groovy.transform.TypeCheckingMode
 
 /**
+ * 静态类型检查
+ *
  * @author moqi* On 9/27/20 22:14
  */
 def shout(String str) {

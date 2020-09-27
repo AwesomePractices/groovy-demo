@@ -1,6 +1,8 @@
 package com.moqi.ch03
 
 /**
+ * 元编程的鸭子对象模式
+ *
  * @author moqi* On 9/27/20 20:54
  */
 class A01Man {
