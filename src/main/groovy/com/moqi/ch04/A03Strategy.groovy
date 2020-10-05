@@ -3,7 +3,7 @@ package com.moqi.ch04
 /**
  * 闭包在策略模式中的使用
  *
- * @author moqi* On 10/3/20 14:47
+ * @author moqi On 10/3/20 14:47
  */
 def totalSelectValues(n, closure) {
     total = 0

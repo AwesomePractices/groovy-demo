@@ -3,7 +3,7 @@ package com.moqi.ch04
 /**
  * 科里化闭包
  *
- * @author moqi* On 10/3/20 15:53
+ * @author moqi On 10/3/20 15:53
  */
 def tellFortunes(closure) {
     Date date = new Date("09/20/2012")

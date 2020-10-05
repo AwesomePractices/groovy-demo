@@ -4,7 +4,7 @@ package com.moqi
  * 对 Java 5 的支持
  * 自动装箱、for-each、enum
  *
- * @author moqi* On 9/26/20 21:30
+ * @author moqi On 9/26/20 21:30
  */
 int val = 5
 println(val.class.name)

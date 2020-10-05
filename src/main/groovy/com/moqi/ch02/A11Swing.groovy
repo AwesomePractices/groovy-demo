@@ -7,7 +7,7 @@ import java.awt.event.*
 /**
  * 实现接口
  *
- * @author moqi* On 9/26/20 21:17
+ * @author moqi On 9/26/20 21:17
  */
 frame = new JFrame(size: [300, 300],
         layout: new FlowLayout(),

@@ -3,7 +3,7 @@ package com.moqi
 /**
  * 布尔值判断
  *
- * @author moqi* On 9/26/20 21:20
+ * @author moqi On 9/26/20 21:20
  */
 str = 'hello'
 if (str) {

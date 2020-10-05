@@ -3,7 +3,7 @@ package com.moqi.ch04
 /**
  * 闭包委托
  *
- * @author moqi* On 10/5/20 09:00
+ * @author moqi On 10/5/20 09:00
  */
 def examiningClosure(closure) {
     closure()

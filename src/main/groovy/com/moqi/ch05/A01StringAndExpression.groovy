@@ -3,7 +3,7 @@ package com.moqi.ch05
 /**
  * 字面常量与表达式
  *
- * @author moqi* On 10/5/20 09:52
+ * @author moqi On 10/5/20 09:52
  */
 println('He said, "That is Groovy"')
 println()

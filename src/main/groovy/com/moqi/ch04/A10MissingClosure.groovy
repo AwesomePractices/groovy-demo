@@ -3,7 +3,7 @@ package com.moqi.ch04
 /**
  * 动态闭包
  *
- * @author moqi* On 10/5/20 08:48
+ * @author moqi On 10/5/20 08:48
  */
 def doSomeThing(closure) {
     if (closure) {

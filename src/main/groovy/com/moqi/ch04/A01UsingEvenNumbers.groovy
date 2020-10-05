@@ -3,7 +3,7 @@ package com.moqi.ch04
 /**
  * 闭包练习 01
  *
- * @author moqi* On 10/3/20 14:33
+ * @author moqi On 10/3/20 14:33
  */
 def sum(n) {
     total = 0

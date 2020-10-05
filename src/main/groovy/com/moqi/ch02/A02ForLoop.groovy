@@ -3,7 +3,7 @@ package com.moqi
 /**
  * 实现循环的几种方式
  *
- * @author moqi* On 9/24/20 21:40
+ * @author moqi On 9/24/20 21:40
  */
 class A02ForLoop {
 

@@ -3,7 +3,7 @@ package com.moqi
 /**
  * 使用多赋值
  *
- * @author moqi* On 9/26/20 21:02
+ * @author moqi On 9/26/20 21:02
  */
 static def splitName(fullName) { fullName.split(' ') }
 

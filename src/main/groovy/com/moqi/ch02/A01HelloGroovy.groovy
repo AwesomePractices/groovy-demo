@@ -3,7 +3,7 @@ package com.moqi
 /**
  * Java Code -> Groovy Code
  *
- * @author moqi* On 9/24/20 21:40
+ * @author moqi On 9/24/20 21:40
  */
 class A01HelloGroovy {
 

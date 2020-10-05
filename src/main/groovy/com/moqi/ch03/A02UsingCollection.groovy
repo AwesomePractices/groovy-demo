@@ -3,7 +3,7 @@ package com.moqi.ch03
 /**
  * 使得 remove 具有正确的行为
  *
- * @author moqi* On 9/27/20 21:19
+ * @author moqi On 9/27/20 21:19
  */
 class A02UsingCollection {
 

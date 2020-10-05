@@ -4,7 +4,7 @@ package com.moqi
  * 对 Java 5 的支持
  * 变长参数、注解、静态导入、范型
  *
- * @author moqi* On 9/26/20 21:30
+ * @author moqi On 9/26/20 21:30
  */
 def receiveCarArgs(int a, int ... b) {
     println "a = $a, b = $b"

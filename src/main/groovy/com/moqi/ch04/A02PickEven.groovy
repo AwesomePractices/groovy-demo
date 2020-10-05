@@ -3,7 +3,7 @@ package com.moqi.ch04
 /**
  * 使用闭包抽取函数的公共部分
  *
- * @author moqi* On 10/3/20 14:38
+ * @author moqi On 10/3/20 14:38
  */
 static def pickEven(n, block) {
     for (int i = 2; i <= n; i += 2) {

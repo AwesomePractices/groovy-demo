@@ -3,7 +3,7 @@ package com.moqi.ch04
 /**
  * 闭包在构造函数中的使用
  *
- * @author moqi* On 10/3/20 14:52
+ * @author moqi On 10/3/20 14:52
  */
 class A04Equipment {
     def calculator

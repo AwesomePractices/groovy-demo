@@ -3,7 +3,7 @@ package com.moqi
 /**
  * 使用 final 和自定义 set 方法禁止变量赋值
  *
- * @author moqi* On 9/26/20 20:33
+ * @author moqi On 9/26/20 20:33
  */
 class A07CarPrivate {
 

@@ -1,7 +1,7 @@
 package com.moqi
 
 /**
- * @author moqi* On 9/24/20 22:33
+ * @author moqi On 9/24/20 22:33
  */
 class A06ChainCall {
 

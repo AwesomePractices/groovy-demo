@@ -5,7 +5,7 @@ import groovy.transform.*
 /**
  * 使用记忆化改进性能
  *
- * @author moqi* On 10/5/20 09:27
+ * @author moqi On 10/5/20 09:27
  */
 def timeIt(length, closure) {
     long start = System.nanoTime()

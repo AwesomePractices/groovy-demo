@@ -3,7 +3,7 @@ package com.moqi
 /**
  * 灵活初始化与具名参数
  *
- * @author moqi* On 9/26/20 20:46
+ * @author moqi On 9/26/20 20:46
  */
 class Robot {
     def type, height, width

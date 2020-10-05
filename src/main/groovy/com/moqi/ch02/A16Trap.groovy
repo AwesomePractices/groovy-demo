@@ -5,7 +5,7 @@ import org.codehaus.groovy.runtime.typehandling.GroovyCastException
 /**
  * 陷阱
  *
- * @author moqi* On 9/26/20 22:40
+ * @author moqi On 9/26/20 22:40
  */
 str1 = 'hello'
 str2 = str1

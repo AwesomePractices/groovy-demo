@@ -4,7 +4,7 @@ package com.moqi.ch04
  * 使用闭包在代码块的前后执行相应操作
  * 对 Execute Around Method 模式的讨论: https://stackoverflow.com/a/342016
  *
- * @author moqi* On 10/3/20 15:22
+ * @author moqi On 10/3/20 15:22
  */
 class A07Resource {
     def open() { println('opened ...') }

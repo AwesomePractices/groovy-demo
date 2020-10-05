@@ -3,7 +3,7 @@ package com.moqi
 /**
  * Groovy Bean 1
  *
- * @author moqi* On 9/26/20 20:13
+ * @author moqi On 9/26/20 20:13
  */
 class A07Car {
 

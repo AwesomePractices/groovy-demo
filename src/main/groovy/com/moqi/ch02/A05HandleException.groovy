@@ -4,7 +4,7 @@ package com.moqi
  *
  * 异常处理
  *
- * @author moqi* On 9/24/20 22:27
+ * @author moqi On 9/24/20 22:27
  */
 static def openFile(String fileName) {
     new FileInputStream(fileName)

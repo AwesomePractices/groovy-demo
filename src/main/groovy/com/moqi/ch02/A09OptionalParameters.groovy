@@ -3,7 +3,7 @@ package com.moqi
 /**
  * 可选形参
  *
- * @author moqi* On 9/26/20 20:58
+ * @author moqi On 9/26/20 20:58
  */
 static def log(x, base=10) {
     Math.log(x) / Math.log(base)

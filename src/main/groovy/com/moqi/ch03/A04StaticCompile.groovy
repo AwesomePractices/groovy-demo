@@ -5,7 +5,7 @@ import groovy.transform.CompileStatic
 /**
  * 静态编译提高性能
  *
- * @author moqi* On 9/27/20 22:26
+ * @author moqi On 9/27/20 22:26
  */
 def shout1(String str) {
     println(str.toUpperCase())

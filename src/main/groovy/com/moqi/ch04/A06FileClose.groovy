@@ -3,7 +3,7 @@ package com.moqi.ch04
 /**
  * 使用闭包进行资源清理 01
  *
- * @author moqi* On 10/3/20 15:06
+ * @author moqi On 10/3/20 15:06
  */
 def outputTxtFile = '/Users/moqi/Downloads/output.txt'
 writer = new FileWriter(outputTxtFile)

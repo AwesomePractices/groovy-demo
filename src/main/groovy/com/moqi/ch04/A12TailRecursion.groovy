@@ -3,7 +3,7 @@ package com.moqi.ch04
 /**
  * 使用尾递归编写程序
  *
- * @author moqi* On 10/5/20 09:16
+ * @author moqi On 10/5/20 09:16
  */
 def factorial(BigInteger number) {
     if (number == 1) 1 else number * factorial(number - 1)

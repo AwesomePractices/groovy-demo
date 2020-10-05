@@ -3,7 +3,7 @@ package com.moqi
 /**
  * 安全导航操作符
  *
- * @author moqi* On 9/24/20 22:21
+ * @author moqi On 9/24/20 22:21
  */
 
 static def foo(String str) {
