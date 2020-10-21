@@ -67,5 +67,33 @@ def playWithSleep(flag) {
 playWithSleep(true)
 playWithSleep(false)
 
+class A01Car {
+    int miles, fuelLevel
+}
 
+car = new A01Car(fuelLevel: 80, miles: 25)
 
+properties = ['miles', 'fuelLevel']
+// 上面的列表可能通过一些输入来填充
+// 或者来自一个 Web 应用中的动态表单
+
+properties.each {name ->
+    println("$name = ${car[name]}")
+}
+
+car[properties[1]] = 100
+
+println("fuelLevel now is ${car.fuelLevel}")
+println()
+
+class A01Person {
+    def walk() {println("walking")}
+    def walk(int miles) {println("walking $miles miles...")}
+    def walk(int miles, String where) {println("walking $miles miles $where...")}
+}
+
+peter = new A01Person()
+
+peter.invokeMethod("walk", null)
+peter.invokeMethod("walk", 10)
+peter.invokeMethod("walk", [2, 'beijing'] as Object[])
