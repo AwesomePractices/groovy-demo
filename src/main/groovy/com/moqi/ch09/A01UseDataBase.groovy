@@ -14,3 +14,29 @@ def sql = Sql.newInstance('jdbc:mysql://localhost:3306/weather_info',
         mysqlConfig[0], mysqlConfig[1], 'com.mysql.cj.jdbc.Driver')
 
 println(sql.connection.catalog)
+println()
+
+// select
+println("City                Temperature")
+sql.eachRow('select * from weather') {
+    printf("%-20s%s\n", it.city, it[1])
+}
+println()
+
+ProcessMeta = {metaData ->
+    metaData.columnCount.times {i ->
+        printf("%-20s", metaData.getColumnLabel(i + 1))
+    }
+    println()
+}
+sql.eachRow('select * from weather', ProcessMeta) {
+    printf("%-20s%s\n", it.city, it[1])
+}
+println()
+
+rows = sql.rows('select * from weather')
+println("Weather info available for ${rows.size()} cities")
+println()
+
+
+
