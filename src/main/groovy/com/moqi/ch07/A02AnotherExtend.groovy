@@ -32,17 +32,17 @@ printThreadInfo('Main')
 
 Thread.start {
     printThreadInfo("Started")
-    sleep(3000) {
+    sleep(300) {
         println("Interrupted")
     }
     println("Finished Started")
 }
 
-sleep(1000)
+sleep(100)
 
 Thread.startDaemon {
     printThreadInfo("Started Daemon")
-    sleep(5000) {
+    sleep(500) {
         println("Interrupted")
     }
     // 不会执行到这里
@@ -52,3 +52,21 @@ println()
 
 
 
+final String THOREAU_PATH = "/Users/moqi/Code/groovy-demo/src/main/resources/thoreau.txt"
+final String OUTPUT_PATH = "/Users/moqi/Code/groovy-demo/src/main/resources/output.txt"
+
+println(new File(THOREAU_PATH).text)
+println()
+
+new File(THOREAU_PATH).eachLine {line ->
+    // 或者在这里执行自己想对该行进行的任何处理
+    println("line = " + line)
+}
+println()
+
+println(new File(THOREAU_PATH).filterLine {it =~ /life/})
+println()
+
+new File(OUTPUT_PATH).withWriter {file ->
+    file << "some data........"
+}
