@@ -1,4 +1,4 @@
-package com.moqi
+package com.moqi.ch02
 
 /**
  * 实现循环的几种方式

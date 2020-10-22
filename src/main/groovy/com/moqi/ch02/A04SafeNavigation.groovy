@@ -1,4 +1,4 @@
-package com.moqi
+package com.moqi.ch02
 
 /**
  * 安全导航操作符

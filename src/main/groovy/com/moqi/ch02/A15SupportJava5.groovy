@@ -1,4 +1,4 @@
-package com.moqi
+package com.moqi.ch02
 
 /**
  * 对 Java 5 的支持

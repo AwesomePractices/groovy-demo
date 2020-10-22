@@ -1,4 +1,4 @@
-package com.moqi
+package com.moqi.ch02
 
 import org.codehaus.groovy.runtime.typehandling.GroovyCastException
 

@@ -1,4 +1,4 @@
-package com.moqi
+package com.moqi.ch02
 
 /**
  * 灵活初始化与具名参数

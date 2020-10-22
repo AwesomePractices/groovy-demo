@@ -1,4 +1,4 @@
-package com.moqi
+package com.moqi.ch02
 
 /**
  * 布尔值判断

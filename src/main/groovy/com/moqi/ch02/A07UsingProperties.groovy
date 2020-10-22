@@ -1,4 +1,4 @@
-package com.moqi
+package com.moqi.ch02
 
 /**
  * 读取属性使用点的方式，而无需使用访问器和更改器

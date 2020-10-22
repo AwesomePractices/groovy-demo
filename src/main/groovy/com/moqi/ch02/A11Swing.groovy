@@ -1,4 +1,4 @@
-package com.moqi
+package com.moqi.ch02
 
 import javax.swing.*
 import java.awt.*

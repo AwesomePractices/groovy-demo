@@ -1,4 +1,4 @@
-package com.moqi
+package com.moqi.ch02
 
 /**
  * 使用 final 和自定义 set 方法禁止变量赋值
