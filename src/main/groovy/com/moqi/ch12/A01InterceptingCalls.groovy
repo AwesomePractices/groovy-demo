@@ -14,10 +14,10 @@ class A01Car implements GroovyInterceptable {
 
     def invokeMethod(String name, args) {
         System.out.println("")
-        System.out.println("Call to $name intercepted... ")
+        System.out.print("Call to $name intercepted... ")
 
         if (name != 'check') {
-            System.out.println("running filter...")
+            System.out.print("running filter...")
             A01Car.metaClass.getMetaMethod('check').invoke(this, null)
         }
 
