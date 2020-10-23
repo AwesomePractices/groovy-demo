@@ -10,13 +10,13 @@ package com.moqi.ch13
  *
  * @author moqi* On 10/23/20 17:30
  */
-trait A06Friend {
+trait A07Friend {
     def listen() {
         "$name is listening as a friend"
     }
 }
 
-class A06Person implements A06Friend {
+class A07Person implements A07Friend {
     String firstName
     String lastName
     String getName() {
@@ -24,15 +24,15 @@ class A06Person implements A06Friend {
     }
 }
 
-john = new A06Person(firstName: 'John', lastName: 'Smith')
+john = new A07Person(firstName: 'John', lastName: 'Smith')
 println(john.listen())
 println()
 
-class A06Dog implements A06Friend {
+class A07Dog implements A07Friend {
     String name
 }
 
-buddy = new A06Dog(name: 'Buddy')
+buddy = new A07Dog(name: 'Buddy')
 println(buddy.listen())
 println()
 
@@ -48,9 +48,9 @@ try {
 }
 println()
 
-class A06FriendClass implements A06Friend {}
+class A07FriendClass implements A07Friend {}
 
 mimi = new A06Cat(name: "Mimi")
-mimi.metaClass.mixin(A06FriendClass)
+mimi.metaClass.mixin(A07FriendClass)
 println(mimi.listen())
 
