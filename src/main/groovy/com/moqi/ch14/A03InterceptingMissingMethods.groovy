@@ -11,7 +11,7 @@ class A03Person implements GroovyInterceptable {
     def plays = ['Tennis', 'VolleyBall', 'BasketBall']
 
     def invokeMethod(String name, args) {
-        System.err.println("incercepting call for $name")
+        System.out.println("incercepting call for $name")
 
         def method = metaClass.getMetaMethod(name, args)
 
@@ -23,7 +23,7 @@ class A03Person implements GroovyInterceptable {
     }
 
     def methodMissing(String name, args) {
-        System.err.println("Method missing called for $name")
+        System.out.println("Method missing called for $name")
         def methodInList = plays.find { it == name.split('play')[1] }
 
         if (methodInList) {
