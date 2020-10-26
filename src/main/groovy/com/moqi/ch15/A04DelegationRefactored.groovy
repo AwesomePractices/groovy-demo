@@ -1,54 +1,51 @@
 package com.moqi.ch15
 
 /**
- * 方法委托：汇总练习
+ * 重构委托调用
  *
  * @author moqi On 10/26/20 11:30
  */
-class A03Worker {
+class A04Worker {
     def simpleWork1(spec) {println("worker does work1 with spec $spec")}
     def simpleWork2() {println("worker does work2")}
 }
 
-class A03Expert {
+class A04Expert {
     def advancedWork1(spec) {println("Expect does work1 with spec $spec")}
     def advancedWork2(scope, spec) {
         println("Expect does work2 with scope $scope spec $spec")
     }
 }
 
-class A03Manager {
-    def worker = new A03Worker()
-    def expert = new A03Expert()
+class A04Manager {
+    {delegateCallsTo A04Worker, A04Expert, GregorianCalendar}
+
     def schedule() {println("Scheduling ...")}
+}
 
-    def methodMissing (String name, args) {
-        println("intercepting call to $name")
+Object.metaClass.delegateCallsTo = {Class... classOfDelegates ->
+    def objectOfDelegates = classOfDelegates.collect {it.newInstance()}
 
-        def delegateTo = null
+    delegate.metaClass.methodMissing = {String name, args ->
+        println("intercepting call to $name...")
 
-        if (name.startsWith('simple')) {
-            delegateTo = worker
+        def delegateTo = objectOfDelegates.find {
+            it.metaClass.respondsTo(it, name, args)
         }
-        if (name.startsWith('advanced')) {
-            delegateTo = expert
-        }
 
-        if (delegateTo?.metaClass?.respondsTo(delegateTo, name, args)) {
-            A03Manager manager = this
-
-            manager.metaClass."$name" = {Object[] varArgs ->
+        if (delegateTo) {
+            delegate.metaClass."$name" = {Object[] varArgs ->
                 delegateTo.invokeMethod(name, varArgs)
             }
 
             delegateTo.invokeMethod(name, args)
         } else {
-            throw new MissingMethodException(name, A03Manager.class, args)
+            throw new MissingMethodException(name, delegate.getClass(), args)
         }
     }
 }
 
-peter = new A03Manager()
+peter = new A04Manager()
 peter.schedule()
 peter.simpleWork1('fast')
 peter.simpleWork1('quality')
@@ -58,6 +55,9 @@ peter.advancedWork1('fast')
 peter.advancedWork1('quality')
 peter.advancedWork2('prototype', 'fast')
 peter.advancedWork2('product', 'quality')
+
+// 方法来自于类 GregorianCalendar 中
+println("Is 2008 a leap year? " + peter.isLeapYear(2008))
 
 try {
     peter.simpleWork3()
