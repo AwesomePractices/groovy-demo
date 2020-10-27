@@ -2,7 +2,7 @@
 target
 *.DS_Store
 *.iml
-src/main/resources/output.txt
+src/main/resources/output*.txt
 src/main/resources/mysql_config.txt
 src/main/groovy/classes/*
 src/main/groovy/*.jar
