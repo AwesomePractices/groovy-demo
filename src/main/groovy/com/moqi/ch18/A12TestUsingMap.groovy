@@ -7,7 +7,7 @@ import groovy.test.GroovyTestCase
  *
  * @author moqi On 10/27/20 19:09
  */
-class A11TestUsingMap extends GroovyTestCase {
+class A12TestUsingMap extends GroovyTestCase {
 
     void testMethodA() {
         def text = ''
