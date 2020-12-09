@@ -1,3 +1,3 @@
-# groovy demo
+# [Groovy 程序设计](https://book.douban.com/subject/26115995/)
 
-Learn Groovy.
+练习 Groovy 代码。
